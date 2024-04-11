@@ -5,7 +5,7 @@ document.getElementById("description").innerHTML = "Description of Event: " + lo
 document.getElementById("button").addEventListener("click", function(event) {
   event.preventDefault();
   if (localStorage.getItem("driver") !== null) {
-    window.location.href = "./Summary.html";
+    window.location.href = "Summary/Summary.html";
   }
   else {
     localStorage.setItem("driver", localStorage.getItem("currentuser"));
