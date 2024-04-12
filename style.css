@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 body {
-  background-color: #f4f4f4;
+  background-color:  #6689f5 ;
 
   font-family: "Play", sans-serif;
 }
@@ -173,7 +173,7 @@ input:checked + .slider:before {
 .bee {
   position: fixed; 
   
-  top: 100px; 
+
   width: 90px;
   height: 150px;
   -webkit-animation: action 0.5s infinite alternate;
@@ -279,16 +279,18 @@ input:checked + .slider:before {
 
 
 .bee:nth-child(1) {
-  left: 250px; 
-  top: 100px; 
+  left: 10%; 
+  top: 20%; 
 }
 
 .bee:nth-child(2) {
-  right: 250px;
-  top: 300px; 
+  right: 10%;
+  top: 45%; 
 }
 
 .bee:nth-child(3) {
-  left: 250px; 
-  top: 600px; 
+  left: 10%; 
+  top: 70%; 
 }
+
+
