@@ -1,11 +1,8 @@
 /*=============== Bee ===============*/
 
-body {
-  background-color: #FFF59D;
-  overflow: hidden;
-}
+
 .bug {
-  margin-left: -100px;
+
   transform: rotate(-360deg);
   width: 100px;
   height: 50px;
@@ -20,7 +17,7 @@ body {
   position: absolute;
   left: 50px;
   top: 50px;
-  z-index: 6;
+  z-index: 996;
 }
 .bee2 {
   width: 40px;
@@ -30,7 +27,7 @@ body {
   position: absolute;
   left: 30px;
   top: 50px;
-  z-index: 4;
+  z-index: 994;
 
 }
 .black {
@@ -41,7 +38,7 @@ body {
   position: absolute;
   left: 40px;
   top: 50px;
-  z-index: 5;
+  z-index: 995;
 
 }
 .eye {
@@ -52,7 +49,7 @@ body {
   position: absolute;
   right: 10px;
   top: 10px;
-  z-index: 6;
+  z-index: 996;
   animation: eye 0.5s 2.2s 2 linear;
 }
 .wing {
@@ -63,7 +60,7 @@ body {
   position: absolute;
   right: 10px;
   top: -15px;
-  z-index: 2;
+  z-index: 992;
   border: 0.5px solid #90CAF9;
   animation: wings 1s linear infinite;
 }
@@ -76,7 +73,7 @@ body {
   right: 0;
   top: -15px;
   border: 0.5px solid #90CAF9;
-  z-index: 1;
+  z-index: 991;
   animation: wings2 1s linear infinite;
 }
 @keyframes bee {
@@ -86,29 +83,45 @@ body {
     margin-top: 50px;}
   10% {
     transform: rotate(-10deg);
-    margin-left: 100px;
+    margin-left: 10%;
     margin-top: 80px;
   }
   20% { 
     transform: rotate(-20deg);
-    margin-left: 200px;
+    margin-left: 20%;
     margin-top: 80px;
   }
   50% {
-    margin-left: 500px;
+    margin-left: 50%;
     margin-top: 50px;
     transform: rotate(-360deg);
   }
- 60% {
-     margin-left: 600px;
+  60% {
+     margin-left: 60%;
      margin-top: 60px;
      transform: rotate(-360deg);
   }
+  70% {
+     margin-left: 70%;
+     margin-top: 60px;
+  }
+  80% {
+     margin-left: 80%;
+     margin-top: 60px;
+  }
+  90% {
+     margin-left: 90%;
+     margin-top: 60px;
+  }
+  
   100% { 
-     margin-left: 900px;
+     margin-left: 100%;
      margin-top: 80px;
   }
 }
+
+
+
 @keyframes wings {
   20% {
     right: 12px;
@@ -178,6 +191,15 @@ body {
   }
   100% {  width: 5px;
   height: 5px;}
+}
+.bug:nth-child(1) {
+  margin-left: -100px;
+  top: 7%; 
+}
+
+.bug:nth-child(2) {
+  margin-left: -100px;
+  top: 83%; 
 }
 
 /*=============== GOOGLE FONTS ===============*/
