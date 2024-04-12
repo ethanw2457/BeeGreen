@@ -73,7 +73,7 @@ section{
   overflow:hidden;
   column-gap:2rem;
   border-radius:0.5rem;
-  background-color:#f5f4f3;
+  background-color:#171717;
   padding:clamp(1rem,3vw,3rem) clamp(2rem,5vw,5rem);
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));
