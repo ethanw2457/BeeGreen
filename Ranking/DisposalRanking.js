@@ -1,7 +1,7 @@
 document.getElementById("name2").innerHTML = localStorage.getItem("name");
 
 
-document.getElementById("address").innerHTML = "Disposal Location Distance: 1 mins<br> Verified: &#10004;";
+// document.getElementById("address").innerHTML = "Disposal Location Distance: 1 mins<br> Verified: &#10004;";
 
 document.getElementById("button").addEventListener("click", function(event) {
   event.preventDefault();
