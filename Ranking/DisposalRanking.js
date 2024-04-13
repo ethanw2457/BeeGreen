@@ -1,16 +1,16 @@
-document.getElementById("name").innerHTML = localStorage.getItem("event");
-document.getElementById("date").innerHTML = localStorage.getItem("eventdate");
-document.getElementById("description").innerHTML = "Description of Event: " + localStorage.getItem("eventdesc") + "<br>" + "Event Location: " + localStorage.getItem("eventaddress") + "<br>" + "Driver: " + (localStorage.getItem("driver") !== null ? "Yes" : "No");
+document.getElementById("name2").innerHTML = localStorage.getItem("name");
+
+
+document.getElementById("address").innerHTML = "Disposal Location Distance: 1 mins<br> Verified: &#10004;";
 
 document.getElementById("button").addEventListener("click", function(event) {
   event.preventDefault();
   if (localStorage.getItem("driver") !== null) {
-    window.location.href = "Summary/Summary.html";
+    window.location.href = "/Summary/Summary.html";
   }
   else {
     localStorage.setItem("driver", localStorage.getItem("currentuser"));
-    alert("Successfully signed up as a driver!");
-    window.location.href = "index.html";
+    window.location.href = "/Summary/Summary.html";
   }
 })
 

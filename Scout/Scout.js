@@ -2,8 +2,8 @@
 document.getElementById("loginform").addEventListener("submit", function(event) {
   event.preventDefault(); 
 
-  const name = document.getElementById("name").value.trim();
-  const address = document.getElementById("address").value.trim();
+  const name = document.getElementById("name2").value.trim();
+  const address = document.getElementById("address2").value.trim();
 
   if (name === "" || address === "") {
     alert("Please fill in all fields.");
@@ -13,8 +13,8 @@ document.getElementById("loginform").addEventListener("submit", function(event) 
   while (localStorage.getItem("user" + i) !== null) {
     i++;
   }
-  localStorage.setItem("name" + i, name);
-  localStorage.setItem("address" + i, address);
+  localStorage.setItem("name2" + i, name);
+  localStorage.setItem("address2" + i, address);
 
   localStorage.setItem("status" + i, "driver");
 
