@@ -134,13 +134,13 @@ svg{
   gap:1rem;
 }
 .yellow{
-  background-color:#F7F2EF;
-}
-.green{
   background-color:#FFED4F;
 }
-.violet{
+.green{
   background-color:#F7F2EF;
+}
+.violet{
+  background-color:#FFED4F;
 }
 
 .section-img > * {
@@ -164,7 +164,7 @@ svg{
   content:'';
   height:10rem;
   width:10rem;
-  background-color:#BF3124;
+  background-color:#FFED4F;
   border-radius:50%;
   filter:blur(80px);
   position:absolute;
@@ -267,7 +267,7 @@ svg{
 .container {
   position: relative;
   width: 100%;
-  background-color: #BF3124;
+  background-color: #FFED4F;
   min-height: 70vh;
   overflow: hidden;
 }
