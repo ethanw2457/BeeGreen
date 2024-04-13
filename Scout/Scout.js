@@ -1,26 +1,33 @@
-document.getElementById("eventform").addEventListener("submit", function(event) {
+
+document.getElementById("loginform").addEventListener("submit", function(event) {
   event.preventDefault(); 
 
   const name = document.getElementById("name").value.trim();
-  const date = document.getElementById("date").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
   const address = document.getElementById("address").value.trim();
-  const desc = document.getElementById("description").value.trim();
 
-
-  if (name === "" || date === "" || address === "" || desc === "") {
+  if (name === "" || email === "" || phone === "" || address === "") {
     alert("Please fill in all fields.");
     return;
   }
-  
-  localStorage.setItem("event", name)
-  localStorage.setItem("eventdate", date);
-  localStorage.setItem("eventaddress", address);
-  localStorage.setItem("eventdesc", desc);
-  
+  var i = 1;
+  while (localStorage.getItem("user" + i) !== null) {
+    i++;
+  }
+  localStorage.setItem("user" + i, name);
+  localStorage.setItem("email" + i, email);
+  localStorage.setItem("phone" + i, phone);
+  localStorage.setItem("address" + i, address);
 
+  localStorage.setItem("status" + i, "driver");
 
-  alert("Event added successfully!");
+  localStorage.setItem("currentuser", i);
 
+  //document.getElementById("result").innerHTML = localStorage.getItem("user1");
 
-  window.location.href = "./index.html";
+  //localStorage.clear();
+  // Assume AJAX call to send login info to server and save in database
+  // Redirect to another page after successful login
+  window.location.href = "Ranking/Ranking.html"; // Redirect to event selection page
 });
