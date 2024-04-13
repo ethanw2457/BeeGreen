@@ -1,16 +1,16 @@
-document.getElementById("name").innerHTML = localStorage.getItem("event");
-document.getElementById("date").innerHTML = localStorage.getItem("eventdate");
-document.getElementById("description").innerHTML = "Description of Event: " + localStorage.getItem("eventdesc") + "<br>" + "Event Location: " + localStorage.getItem("eventaddress") + "<br>" + "Driver: " + (localStorage.getItem("driver") !== null ? "Yes" : "No");
+document.getElementById("name").innerHTML = localStorage.getItem("resName");
+/*document.getElementById("date").innerHTML = localStorage.getItem("eventdate");*/
+document.getElementById("description").innerHTML = "Resturant Location " + " 8min"+localStorage.getItem("resName") + "<br>" + "Vegetarian Friendly: " + (localStorage.getItem("vegetarian").checked ? "&#10004" :  "&#10060") + "<br>" + "Emissions Conscious: " + (localStorage.getItem("reduceemissions").checked  ? "&#10004" :  "&#10060") + "<br>" + "Healthy Food: " +(localStorage.getItem("healthy") ? "&#10004" :  "&#10060");
 
 document.getElementById("button").addEventListener("click", function(event) {
   event.preventDefault();
   if (localStorage.getItem("driver") !== null) {
-    window.location.href = "Summary/Summary.html";
+  window.location.href = "Summary/Summary.html";
   }
   else {
-    localStorage.setItem("driver", localStorage.getItem("currentuser"));
-    alert("Successfully signed up as a driver!");
-    window.location.href = "index.html";
+  localStorage.setItem("driver", localStorage.getItem("currentuser"));
+  alert("Successfully signed up as a driver!");
+  window.location.href = "index.html";
   }
 })
 

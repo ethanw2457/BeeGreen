@@ -5,9 +5,10 @@ document.getElementById("eventdesc").innerHTML = localStorage.getItem("eventdesc
 const drivernum = localStorage.getItem("driver");
 const cpnum = localStorage.getItem("currentuser");
 document.getElementById("driver").innerHTML = localStorage.getItem("user" + drivernum);
-document.getElementById("driverinfo").innerHTML = "Driver" + "<br>" + localStorage.getItem("phone" + drivernum) + "<br>" + localStorage.getItem("email" + drivernum) + "<br>" + localStorage.getItem("address" + drivernum);
-document.getElementById("carpoolerinfo").innerHTML = "Carpooler" + "<br>" + localStorage.getItem("email" + cpnum) + "<br>" + localStorage.getItem("address" + cpnum);
+document.getElementById("driverinfo").innerHTML = "Customer" + "<br>" + localStorage.getItem("phone" + drivernum) + "<br>" + localStorage.getItem("email" + drivernum) + "<br>" + localStorage.getItem("address" + drivernum);
+document.getElementById("carpoolerinfo").innerHTML = "Destination #1 - Home Address" + "<br>" + localStorage.getItem("address" + cpnum) + "<br>" + "Destination #2 - Restaurant Location" + "<br>" + localStorage.getItem("address" + cpnum) + "<br>" + "Destination #3 - Disposal Location" + "<br>" + localStorage.getItem("address" + cpnum);
 document.getElementById("carpooler").innerHTML = localStorage.getItem("user" + cpnum);
+
 
 
 function initMap() {

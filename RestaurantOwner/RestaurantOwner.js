@@ -2,27 +2,30 @@ document.getElementById("eventform").addEventListener("submit", function(event) 
   event.preventDefault(); 
 
   const name = document.getElementById("name").value.trim();
-  const date = document.getElementById("date").value.trim();
   const address = document.getElementById("address").value.trim();
-  const desc = document.getElementById("description").value.trim();
+  const switch1 = document.getElementById("mySwitch1").value;
+const switch2 = document.getElementById("mySwitch2").value;
+const switch3 = document.getElementById("mySwitch3").value;
 
 
-  if (name === "" || date === "" || address === "" || desc === "") {
-    alert("Please fill in all fields.");
-    return;
+  if (name === "" || address === "") {
+	alert("Please fill in all fields.");
+	return;
   }
-  
-  localStorage.setItem("event", name)
-  localStorage.setItem("eventdate", date);
+
+  localStorage.setItem("resName", name)
   localStorage.setItem("eventaddress", address);
-  localStorage.setItem("eventdesc", desc);
+  localStorage.setItem("vegetarian", switch1);
+  localStorage.setItem("reduceemissions", switch2);	
+	localStorage.setItem("healthy", switch3);
+
   
 
 
-  alert(alert("🎉Restaurant added successfully!✅"););
+  alert("🎉Restaurant added successfully!✅");
 
 
-  window.location.href = "/index.html";
+  window.location.href = "/Ranking/RestaurantRanking.html";
 });
 // slider
 // Access the checkbox element
