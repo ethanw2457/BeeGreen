@@ -16,7 +16,7 @@ document.getElementById("loginform").addEventListener("submit", function(event) 
   localStorage.setItem("name2" + i, name);
   localStorage.setItem("address2" + i, address);
 
-  localStorage.setItem("status" + i, "driver");
+  localStorage.setItem("status" + i, "disposal");
 
   localStorage.setItem("disposal", i);
 

@@ -14,12 +14,11 @@ const switch3 = document.getElementById("mySwitch3").checked;
   }
 
   localStorage.setItem("resName", name)
-  localStorage.setItem("eventaddress", address);
+  localStorage.setItem("address", address);
   localStorage.setItem("vegetarian", switch1);
   localStorage.setItem("reduceemissions", switch2);	
 	localStorage.setItem("healthy", switch3);
 
-  
 
 
   alert("🎉Restaurant added successfully!✅");

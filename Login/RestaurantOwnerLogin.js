@@ -10,7 +10,38 @@ sign_in_btn.addEventListener('click', () =>{
     container.classList.remove("sign-up-mode");
 });
 
+document.getElementById("signupform").addEventListener("submit", function(event) {
+  event.preventDefault(); 
 
+  const name = document.getElementById("signupname").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("signuppassword").value.trim();
+  const address = document.getElementById("address").value.trim();
+
+  if (name === "" || email === "" || password === "" || address === "") {
+    alert("Please fill in all fields.");
+    return;
+  }
+  var i = 1;
+  while (localStorage.getItem("user" + i) !== null) {
+    i++;
+  }
+  localStorage.setItem("user" + i, name);
+  localStorage.setItem("email" + i, email);
+  localStorage.setItem("address" + i, address);
+  localStorage.setItem("password" + i, password);
+
+  localStorage.setItem("status" + i, "carpooler");
+
+  localStorage.setItem("driver", i);
+
+  //document.getElementById("result").innerHTML = localStorage.getItem("user1");
+
+  //localStorage.clear();
+  // Assume AJAX call to send login info to server and save in database
+  // Redirect to another page after successful login
+  window.location.href = "/RestaurantOwner/RestaurantOwner.html"; // Redirect to event selection page
+});
 
 document.getElementById("signinform").addEventListener("submit", function(event) {
   event.preventDefault(); 
