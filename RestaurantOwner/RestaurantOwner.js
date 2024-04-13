@@ -19,10 +19,10 @@ document.getElementById("eventform").addEventListener("submit", function(event) 
   
 
 
-  alert("Event added successfully!");
+  alert(alert("🎉Restaurant added successfully!✅"););
 
 
-  window.location.href = "./index.html";
+  window.location.href = "/index.html";
 });
 // slider
 // Access the checkbox element

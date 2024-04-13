@@ -29,5 +29,6 @@ document.getElementById("loginform").addEventListener("submit", function(event) 
   //localStorage.clear();
   // Assume AJAX call to send login info to server and save in database
   // Redirect to another page after successful login
-  window.location.href = "Ranking/Ranking.html"; // Redirect to event selection page
+  alert("🎉Disposal Location added successfully!✅");
+  window.location.href = "/index.html"; 
 });
