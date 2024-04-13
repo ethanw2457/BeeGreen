@@ -213,9 +213,9 @@
   border: 1px solid #ccc;
 }
 :root {
-  --accent-color: #71dba7;
-  --background-color: #abc;
-  --background-color-2: #bc544d;
+  --accent-color: #171717;
+  --background-color: #FFED4F;
+  --background-color-2: #BB6528;
   --light-grey: rgb(194, 194, 194);
   --border-radius: 30px;
 }
