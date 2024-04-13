@@ -1,4 +1,4 @@
-
+// JS
 document.getElementById("eventname").innerHTML = localStorage.getItem("event");
 document.getElementById("eventdetails").innerHTML = "Location: Kevin‘s kitchen, 1638 E State St, Trenton, NJ 08609" + "<br>Rank: #1";
 document.getElementById("eventdesc").innerHTML = localStorage.getItem("eventdesc");

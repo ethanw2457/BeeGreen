@@ -1,3 +1,4 @@
+// JS
 function check() {
   var checkBox = document.getElementById("checbox");
   var text1 = document.getElementsByClassName("text1");

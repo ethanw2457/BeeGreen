@@ -1,3 +1,4 @@
+// JS
 document.getElementById("name2").innerHTML = localStorage.getItem("name");
 
 

@@ -1,3 +1,4 @@
+// JS
 document.getElementById("eventform").addEventListener("submit", function(event) {
   event.preventDefault(); 
 

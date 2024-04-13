@@ -1,3 +1,4 @@
+// JS
 document.getElementById("name").innerHTML = localStorage.getItem("resName");
 /*document.getElementById("date").innerHTML = localStorage.getItem("eventdate");*/
 document.getElementById("description").innerHTML = "Resturant Location: " + " 8min"+"<br>" + "Vegetarian Friendly: " + (localStorage.getItem("vegetarian") ? "&#10004" :  "&#10060") + "<br>" + "Emissions Conscious: " + (localStorage.getItem("reduceemissions")  ? "&#10004" :  "&#10060") + "<br>" + "Healthy Food: " +(localStorage.getItem("healthy") ? "&#10004" :  "&#10060") + "<br>" + "Verified: &#10060" ;
