@@ -24,3 +24,18 @@ document.getElementById("eventform").addEventListener("submit", function(event) 
 
   window.location.href = "./index.html";
 });
+// slider
+// Access the checkbox element
+const switchInput = document.getElementById('mySwitch');
+// Access the div to display information
+const infoDiv = document.getElementById('info');
+
+// Add event listener to the checkbox
+switchInput.addEventListener('change', function() {
+  // If the checkbox is checked, display "Switch is ON", else display "Switch is OFF"
+  if (this.checked) {
+    infoDiv.textContent = 'Switch is ON';
+  } else {
+    infoDiv.textContent = 'Switch is OFF';
+  }
+});
