@@ -1,5 +1,5 @@
 # BeeGreen
-Evaluation of how much better it is to eat at one business compared to another based on criteria such as pollution and health
+Evaluation of how much better it is to eat at one business compared to another based on criteria such as pollution, safety, health, and quality
 
 ## 📊Profile Wide Statistics📊
 
