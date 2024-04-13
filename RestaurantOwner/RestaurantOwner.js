@@ -3,9 +3,9 @@ document.getElementById("eventform").addEventListener("submit", function(event) 
 
   const name = document.getElementById("name").value.trim();
   const address = document.getElementById("address").value.trim();
-  const switch1 = document.getElementById("mySwitch1").value;
-const switch2 = document.getElementById("mySwitch2").value;
-const switch3 = document.getElementById("mySwitch3").value;
+  const switch1 = document.getElementById("mySwitch1").checked;
+const switch2 = document.getElementById("mySwitch2").checked;
+const switch3 = document.getElementById("mySwitch3").checked;
 
 
   if (name === "" || address === "") {
