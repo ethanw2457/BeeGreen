@@ -36,7 +36,7 @@ document.getElementById("signinform").addEventListener("submit", function(event)
   }
   else {
     localStorage.setItem("currentuser", i);
-    window.location.href = "Customer/Customer.html";
+    window.location.href = "Ranking/RestaurantRanking.html";
  
     //document.getElementById("result").innerHTML = localStorage.getItem("user1");
 
